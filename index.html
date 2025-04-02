@@ -27,6 +27,8 @@
     <div class="center-container">
     <a href="portfolio.html" class="btn">View Portfolio</a>
     </div>
+
+<!-- a loader part-->
 <div id="loader" style="display: none;">
   <div class="spinner"></div>
 </div>
@@ -57,6 +59,28 @@
     100% { transform: rotate(360deg); }
   }
 </style>
+
+
+<!--home page images-->
+<div class="slider-container">
+    <div class="slider">
+        <img src="assets/image1.jpg" class="slide active" alt="First Image">
+        <img src="assets/image2.jpg" class="slide" alt="Second Image">
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+
+    <!-- Indicators -->
+    <div class="indicators">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+</div>
+
+
+<!--Footer part-->
 <footer>
     <p>&copy; 2025 Mzwakhe Obrey Mahaye. All rights reserved.</p>
 </footer>
